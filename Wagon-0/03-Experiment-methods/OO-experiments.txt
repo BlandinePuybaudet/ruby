@@ -1,2 +1,25 @@
 // Copy some experiments you made on ruby String and Fixnum objects below !
-// You choose pick 3 methods for String and 3 methods for Fixnum
+// You choose pick 3 methods for String and 3 methods for Fixnum        from C:/RailsInstaller/Ruby1.9.3
+irb(main):010:0> "hello".length
+=> 5
+irb(main):011:0> "hello".delete "l"
+=> "heo"
+irb(main):012:0> "".empty?
+=> true
+irb(main):013:0> " ".empty?
+=> false
+irb(main):014:0> "hello".gsub("e", "a")
+=> "hallo"
+irb(main):015:0> "hello".split
+=> ["hello"]
+irb(main):016:0> "hello".include?('f')
+=> false
+
+irb(main):018:0> 3*(2+5)
+=> 21
+irb(main):019:0> 3%2
+=> 1      
+irb(main):021:0> "hello"*3
+=> "hellohellohello"
+irb(main):022:0> "hello, "*3
+=> "hello, hello, hello, "
