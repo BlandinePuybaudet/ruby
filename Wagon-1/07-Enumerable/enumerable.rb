@@ -1,31 +1,41 @@
 # TODO: Print the elements at indices 1, 3, 5, 7, etc. on separate lines.
 #       You should make use of Enumerable#each_with_index
+
+
 def print_odd_indexed_integers(array)
+array.each_index {|i| puts array[i] if i%2==1}
 end
  
 # TODO: Return the odd numbers from a list of integers.
 #       You should make use of Enumerable#select
 def odd_integers(array)
+	array.select {|i| i.odd?}
 end
  
 # TODO: Return the first number from an Array that is less than a particular number - 'limit.'
 #       You should make use of Enumerable#find
 def first_under(array, limit)
+	array.detect { |i| i < limit }
 end
  
 # TODO: Take an Array of Strings and return a new Array with an exclamation point appended to each String.
 #       You should make use of Enumerable#map
 def add_bang(array)
+	array.map {|i| i+"!"}
 end
  
 # TODO: Calculate the sum of an Array of numbers.
 #       You should make use of Enumerable#reduce
 def sum(array)
+	array.inject {|a, b | a + b}
 end
  
 # TODO: Reorganize an Array of the elements into groups of 3, and then sort each group alphabetically.
 #       You should make use of Enumerable#each_slice
 def sorted_triples(array)
+	table = []
+	array.each_slice(3) {|a| table<<a.sort}
+	table
 end
  
 # Driver code... don't change this.
