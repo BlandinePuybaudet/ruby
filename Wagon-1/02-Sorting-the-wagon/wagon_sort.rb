@@ -1,17 +1,16 @@
 
 
-students_array= []
+students = []
+
+
+
 
 while true
-	puts "entrez votre nom"
+	puts "quel est ton nom?"
 	student = gets.chomp
 	break if student.empty?
-	students_array << student
+	students<<student
 end
+	
+puts students.sort
 
-students_count = students_array.length
-student_string = (students_count > 1) ? "students" : "student"
-
-puts "Congrats ! Your Wagon has #{students_count} #{student_string}"
-
-puts students_array.sort_by {|x| x.downcase} 

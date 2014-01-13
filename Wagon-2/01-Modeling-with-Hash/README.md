@@ -16,3 +16,4 @@ Just write the pseudocode for it !
 Learn about ruby [hash](http://www.ruby-doc.org/core-2.0.0/Hash.html). They will be your best friends and you'll use them everywhere !How would you re-write your pseudo-code using a hash ? Isn't it more convenient ?
 
 Now let's say we are back in the day and McDonald launches its pre-set meals, like "Happy Meal", "Best Of Big Mac", etc.. How could you use a hash to represent these McDonald sets, and relate them to your product-calory hash.
+

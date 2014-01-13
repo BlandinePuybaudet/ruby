@@ -28,3 +28,4 @@ nom_carac = nom.length
 end	
 
 puts salut_bis
+
